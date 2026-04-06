@@ -1,6 +1,6 @@
 window.VEGA_CONFIG = {
   BUSINESS_ID: '437abada-e3c2-4e30-bb68-2f5a4c7f5984',
-  API_BASE_URL: 'https://kora-agent.quseappdev.com',
+  API_BASE_URL: 'https://kora-agent.grubtok.com',
   RECAPTCHA_V2_SITE_KEY: '6LfRt44sAAAAACVTvFvGjoufmEcZqZk_pT4T_5Xd',
 };
 
