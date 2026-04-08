@@ -13,10 +13,10 @@ window.VEGA_CONFIG = {
     if (!header) return;
     var scrolled = window.scrollY > 100;
     if (scrolled) {
-      header.classList.add('bg-vega-bg-dark/95', 'backdrop-blur-sm', 'shadow-lg');
+      header.classList.add('is-scrolled', 'bg-vega-bg-dark/95', 'backdrop-blur-sm', 'shadow-lg');
       header.classList.remove('bg-transparent');
     } else {
-      header.classList.remove('bg-vega-bg-dark/95', 'backdrop-blur-sm', 'shadow-lg');
+      header.classList.remove('is-scrolled', 'bg-vega-bg-dark/95', 'backdrop-blur-sm', 'shadow-lg');
       header.classList.add('bg-transparent');
     }
   }
