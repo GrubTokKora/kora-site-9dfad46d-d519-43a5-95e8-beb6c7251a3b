@@ -1,960 +1,892 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VEGA Mexican Cuisine – Hartsdale, NY</title>
-    <meta name="description" content="VEGA Mexican Cuisine is a hip cantina in Hartsdale, NY, serving authentic Mexican classics in a sleek, contemporary space with a buzzy, stylish bar." />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="VEGA Mexican Cuisine – Hartsdale, NY" />
-    <meta property="og:description" content="VEGA Mexican Cuisine is a hip cantina in Hartsdale, NY, serving authentic Mexican classics in a sleek, contemporary space with a buzzy, stylish bar." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" />
-    <meta property="og:url" content="https://staging.kora-9dfad46d-d519-43a5-95e8-beb6c7251a3b.pages.dev/" />
-
-    <!-- Fav and touch icons -->
-    <link rel="icon" href="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" type="image/jpeg">
-    <link rel="shortcut icon" href="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" type="image/jpeg">
-    <link rel="apple-touch-icon" href="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://staging.kora-9dfad46d-d519-43a5-95e8-beb6c7251a3b.pages.dev/" />
-
-    <!-- Google Web Font -->
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,600,700|Dancing+Script:400,700|Great+Vibes|Josefin+Sans:400,400i,600,600i|Libre+Baskerville|Open+Sans:600,600i,700|Oswald:300,400,700|Yellowtail" rel="stylesheet" />
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-    <!-- Hero image preload -->
-    <link rel="preload" as="image" href="https://quseprdus1.blob.core.windows.net/kora-business-images/social-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/medialibrary/1775476799_gh7all.jpeg" />
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "VEGA Mexican Cuisine",
-        "description": "Hip cantina serving Mexican classics in a sleek, contemporary space with a buzzy, stylish bar.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "189 E Hartsdale Ave",
-          "addressLocality": "Hartsdale",
-          "addressRegion": "NY",
-          "postalCode": "10530",
-          "addressCountry": "US"
-        },
-        "telephone": "+1-914-723-0010",
-        "openingHours": ["Mo,Tu,Th,Su 11:00-21:00", "We 11:00-19:00", "Fr-Sa 11:00-22:00"],
-        "image": "https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg",
-        "servesCuisine": "Mexican",
-        "url": "https://staging.kora-9dfad46d-d519-43a5-95e8-beb6c7251a3b.pages.dev/"
-      }
-    </script>
-    <link rel="stylesheet" href="assets/styles.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="bg-background text-foreground font-sans antialiased min-h-screen">
-
-    <header
-      data-site-header
-      class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent"
-    >
-      <div id="weather-alert-banner" class="bg-blue-600 text-white text-center py-2 text-sm font-semibold relative">
-        <span>Attention: We will be closing at 7 PM today (Wednesday) due to inclement weather. Stay safe!</span>
-        <button onclick="this.parentElement.style.display='none'" class="absolute top-1/2 right-4 -translate-y-1/2 text-white hover:text-white/70" aria-label="Close banner">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-      </div>
-      <div id="holiday-banner" class="bg-secondary text-white text-center py-2 text-sm font-semibold relative">
-        <span>We will be closed on Thanksgiving Day. Happy Holidays!</span>
-        <button onclick="this.parentElement.style.display='none'" class="absolute top-1/2 right-4 -translate-y-1/2 text-white hover:text-white/70" aria-label="Close banner">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-      </div>
-      <div class="relative">
-        <div class="absolute top-4 right-4 flex items-center gap-3 z-[60]">
-          <a
-            href="https://www.facebook.com/vegamexican"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="w-8 h-8 rounded-full border border-white/50 flex items-center justify-center text-white hover:bg-white hover:text-vega-purple transition-all duration-300"
-            aria-label="Facebook"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a
-            href="https://www.instagram.com/vegamexican/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="w-8 h-8 rounded-full border border-white/50 flex items-center justify-center text-white hover:bg-white hover:text-vega-purple transition-all duration-300"
-            aria-label="Instagram"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-          </a>
-        </div>
-
-        <nav class="container mx-auto px-4 py-2">
-        <div class="hidden lg:flex flex-col items-center">
-          <a href="index.html" class="mb-2">
-            <img id="header-logo" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" alt="VEGA Mexican Cuisine Logo" class="h-16 w-auto transition-all duration-500">
-          </a>
-          <ul class="flex items-center gap-1 flex-wrap justify-center">
-            <li><a href="index.html" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">HOME</a></li>
-            <li><a href="#about" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">ABOUT</a></li>
-            <li><a href="#menu" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">MENU</a></li>
-            <li><a href="#press" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">PRESS</a></li>
-            <li><a href="#contact" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">CONTACT</a></li>
-            <li><a href="hiring.html" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">HIRING</a></li>
-            <li><a href="https://resy.com/cities/hrts/vega-mexican-cuisine" target="_blank" rel="noopener noreferrer" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">RESERVATION</a></li>
-            <li><a href="https://www.toasttab.com/vegamexicancuisine/giftcards" target="_blank" rel="noopener noreferrer" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">GIFT CARD</a></li>
-            <li><a href="https://www.toasttab.com/vegamexicancuisine/marketing-signup" target="_blank" rel="noopener noreferrer" class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide">SUBSCRIBE</a></li>
-            <li>
-              <a href="https://order.toasttab.com/online/vegamexicancuisine" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-md text-primary font-bold hover:text-white transition-colors duration-300 tracking-wide">ORDER NOW</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="lg:hidden flex items-center justify-between">
-          <button type="button" data-mobile-menu-btn class="text-white p-2 z-[60]" aria-label="Toggle menu">
-            <span data-icon-menu>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-            </span>
-            <span data-icon-close class="hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-            </span>
-          </button>
-          <a href="index.html">
-            <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" alt="VEGA Mexican Cuisine Logo" class="h-12 w-auto">
-          </a>
-          <div class="w-10"></div> <!-- Spacer to center logo -->
-        </div>
-
-        <div data-mobile-menu class="hidden lg:hidden mt-4 pb-4 bg-vega-bg-dark/95 rounded-lg">
-          <ul class="flex flex-col items-center gap-2">
-            <li><a href="index.html" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">HOME</a></li>
-            <li><a href="#about" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">ABOUT</a></li>
-            <li><a href="#menu" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">MENU</a></li>
-            <li><a href="#press" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">PRESS</a></li>
-            <li><a href="#contact" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">CONTACT</a></li>
-            <li><a href="hiring.html" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">HIRING</a></li>
-            <li><a href="https://resy.com/cities/hrts/vega-mexican-cuisine" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">RESERVATION</a></li>
-            <li><a href="https://www.toasttab.com/vegamexicancuisine/giftcards" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">GIFT CARD</a></li>
-            <li><a href="https://www.toasttab.com/vegamexicancuisine/marketing-signup" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300">SUBSCRIBE</a></li>
-            <li><a href="https://order.toasttab.com/online/vegamexicancuisine" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-primary font-semibold">ORDER NOW</a></li>
-          </ul>
-        </div>
-      </nav>
-      </div>
-    </header>
-
-    <div class="min-h-screen">
-      <section class="relative h-screen min-h-[600px] w-full overflow-hidden">
-        <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/social-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/medialibrary/1775476799_gh7all.jpeg" alt="A vibrant dish from VEGA Mexican Cuisine" loading="eager" fetchpriority="high" decoding="async" width="1920" height="1280" class="absolute inset-0 w-full h-full object-cover">
-        <div class="absolute inset-0 bg-black/30"></div>
-        <div class="relative z-10 h-full flex flex-col items-center justify-center px-4">
-          <div class="hero-inner flex flex-col items-center">
-            <div class="text-white text-7xl md:text-9xl font-display font-bold tracking-widest text-shadow mb-4">VEGA</div>
-            <h1 class="text-white text-2xl md:text-4xl font-light tracking-wider text-shadow mb-2">EAT. DRINK. FIESTA</h1>
-            <p class="text-white/80 text-sm md:text-base tracking-widest">#CELEBRATINGMEXICO</p>
-          </div>
-        </div>
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div class="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-1">
-            <div class="w-1.5 h-3 bg-white/70 rounded-full animate-pulse"></div>
-          </div>
-        </div>
-      </section>
-
-      <main>
-        <section id="about" class="bg-vega-bg-light py-16 md:py-20">
-          <div class="container mx-auto px-4 max-w-4xl">
-            <h2 class="js-reveal text-4xl md:text-5xl font-serif text-primary text-center mb-12 relative pb-4">
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VEGA Mexican Cuisine – Hartsdale, NY</title>
+<meta content="VEGA Mexican Cuisine is a hip cantina in Hartsdale, NY, serving authentic Mexican classics in a sleek, contemporary space with a buzzy, stylish bar." name="description"/>
+<!-- Open Graph -->
+<meta content="VEGA Mexican Cuisine – Hartsdale, NY" property="og:title"/>
+<meta content="VEGA Mexican Cuisine is a hip cantina in Hartsdale, NY, serving authentic Mexican classics in a sleek, contemporary space with a buzzy, stylish bar." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" property="og:image"/>
+<meta content="https://staging.kora-9dfad46d-d519-43a5-95e8-beb6c7251a3b.pages.dev" property="og:url"/>
+<!-- Fav and touch icons -->
+<link href="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" rel="icon" type="image/jpeg"/>
+<link href="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" rel="shortcut icon" type="image/jpeg"/>
+<link href="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg" rel="apple-touch-icon"/>
+<!-- Canonical -->
+<link href="https://staging.kora-9dfad46d-d519-43a5-95e8-beb6c7251a3b.pages.dev" rel="canonical">
+<!-- Google Web Font -->
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,600,700|Dancing+Script:400,700|Great+Vibes|Josefin+Sans:400,400i,600,600i|Libre+Baskerville|Open+Sans:600,600i,700|Oswald:300,400,700|Yellowtail" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Hero image preload -->
+<link as="image" href="https://quseprdus1.blob.core.windows.net/kora-business-images/social-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/medialibrary/1775476799_gh7all.jpeg" rel="preload"/>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "VEGA Mexican Cuisine",
+  "description": "Hip cantina serving Mexican classics in a sleek, contemporary space with a buzzy, stylish bar.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "189 E Hartsdale Ave",
+    "addressLocality": "Hartsdale",
+    "addressRegion": "NY",
+    "postalCode": "10530",
+    "addressCountry": "US"
+  },
+  "telephone": "+1-914-723-0010",
+  "openingHours": [
+    "Mo,Tu,Th,Su 11:00-21:00",
+    "We 11:00-19:00",
+    "Fr-Sa 11:00-22:00"
+  ],
+  "image": "https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg",
+  "servesCuisine": "Mexican",
+  "url": "https://staging.kora-9dfad46d-d519-43a5-95e8-beb6c7251a3b.pages.dev"
+}</script>
+<link href="assets/styles.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</link></link></link></head>
+<body class="bg-background text-foreground font-sans antialiased min-h-screen">
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent" data-site-header="">
+<div class="bg-blue-600 text-white text-center py-2 text-sm font-semibold relative" id="weather-alert-banner">
+<span>Attention: We will be closing at 7 PM today (Wednesday) due to inclement weather. Stay safe!</span>
+<button aria-label="Close banner" class="absolute top-1/2 right-4 -translate-y-1/2 text-white hover:text-white/70" onclick="this.parentElement.style.display='none'">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
+</button>
+</div>
+<div class="bg-secondary text-white text-center py-2 text-sm font-semibold relative" id="holiday-banner">
+<span>We will be closed on Thanksgiving Day. Happy Holidays!</span>
+<button aria-label="Close banner" class="absolute top-1/2 right-4 -translate-y-1/2 text-white hover:text-white/70" onclick="this.parentElement.style.display='none'">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
+</button>
+</div>
+<div class="relative">
+<div class="absolute top-4 right-4 flex items-center gap-3 z-[60]">
+<a aria-label="Facebook" class="w-8 h-8 rounded-full border border-white/50 flex items-center justify-center text-white hover:bg-white hover:text-vega-purple transition-all duration-300" href="https://www.facebook.com/vegamexican" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+</a>
+<a aria-label="Instagram" class="w-8 h-8 rounded-full border border-white/50 flex items-center justify-center text-white hover:bg-white hover:text-vega-purple transition-all duration-300" href="https://www.instagram.com/vegamexican/" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</a>
+</div>
+<nav class="container mx-auto px-4 py-2">
+<div class="hidden lg:flex flex-col items-center">
+<a class="mb-2" href="index.html">
+<img alt="VEGA Mexican Cuisine Logo" class="h-16 w-auto transition-all duration-500" id="header-logo" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg"/>
+</a>
+<ul class="flex items-center gap-1 flex-wrap justify-center">
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="index.html">HOME</a></li>
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="#about">ABOUT</a></li>
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="#menu">MENU</a></li>
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="#press">PRESS</a></li>
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="#contact">CONTACT</a></li>
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="hiring.html">HIRING</a></li>
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="https://resy.com/cities/hrts/vega-mexican-cuisine" rel="noopener noreferrer" target="_blank">RESERVATION</a></li>
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="https://www.toasttab.com/vegamexicancuisine/giftcards" rel="noopener noreferrer" target="_blank">GIFT CARD</a></li>
+<li><a class="px-3 py-2 text-md text-white font-semibold hover:text-primary transition-colors duration-300 tracking-wide" href="https://www.toasttab.com/vegamexicancuisine/marketing-signup" rel="noopener noreferrer" target="_blank">SUBSCRIBE</a></li>
+<li>
+<a class="px-4 py-2 text-md text-primary font-bold hover:text-white transition-colors duration-300 tracking-wide" href="https://order.toasttab.com/online/vegamexicancuisine" rel="noopener noreferrer" target="_blank">ORDER NOW</a>
+</li>
+</ul>
+</div>
+<div class="lg:hidden flex items-center justify-between">
+<button aria-label="Toggle menu" class="text-white p-2 z-[60]" data-mobile-menu-btn="" type="button">
+<span data-icon-menu="">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+</span>
+<span class="hidden" data-icon-close="">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+</span>
+</button>
+<a href="index.html">
+<img alt="VEGA Mexican Cuisine Logo" class="h-12 w-auto" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775458291_qh9bvm.jpg"/>
+</a>
+<div class="w-10"></div> <!-- Spacer to center logo -->
+</div>
+<div class="hidden lg:hidden mt-4 pb-4 bg-vega-bg-dark/95 rounded-lg" data-mobile-menu="">
+<ul class="flex flex-col items-center gap-2">
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="index.html">HOME</a></li>
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="#about">ABOUT</a></li>
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="#menu">MENU</a></li>
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="#press">PRESS</a></li>
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="#contact">CONTACT</a></li>
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="hiring.html">HIRING</a></li>
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="https://resy.com/cities/hrts/vega-mexican-cuisine" rel="noopener noreferrer" target="_blank">RESERVATION</a></li>
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="https://www.toasttab.com/vegamexicancuisine/giftcards" rel="noopener noreferrer" target="_blank">GIFT CARD</a></li>
+<li><a class="block px-4 py-2 text-white hover:text-primary transition-colors duration-300" href="https://www.toasttab.com/vegamexicancuisine/marketing-signup" rel="noopener noreferrer" target="_blank">SUBSCRIBE</a></li>
+<li><a class="block px-4 py-2 text-primary font-semibold" href="https://order.toasttab.com/online/vegamexicancuisine" rel="noopener noreferrer" target="_blank">ORDER NOW</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<div class="min-h-screen">
+<section class="relative h-screen min-h-[600px] w-full overflow-hidden">
+<img alt="A vibrant dish from VEGA Mexican Cuisine" class="absolute inset-0 w-full h-full object-cover" decoding="async" fetchpriority="high" height="1280" loading="eager" src="https://quseprdus1.blob.core.windows.net/kora-business-images/social-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/medialibrary/1775476799_gh7all.jpeg" width="1920"/>
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative z-10 h-full flex flex-col items-center justify-center px-4">
+<div class="hero-inner flex flex-col items-center">
+<div class="text-white text-7xl md:text-9xl font-display font-bold tracking-widest text-shadow mb-4">VEGA</div>
+<h1 class="text-white text-2xl md:text-4xl font-light tracking-wider text-shadow mb-2">EAT. DRINK. FIESTA</h1>
+<p class="text-white/80 text-sm md:text-base tracking-widest">#CELEBRATINGMEXICO</p>
+</div>
+</div>
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+<div class="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-1">
+<div class="w-1.5 h-3 bg-white/70 rounded-full animate-pulse"></div>
+</div>
+</div>
+</section>
+<main>
+<section class="bg-vega-bg-light py-16 md:py-20" id="about">
+<div class="container mx-auto px-4 max-w-4xl">
+<h2 class="js-reveal text-4xl md:text-5xl font-serif text-primary text-center mb-12 relative pb-4">
               About Us
               <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-secondary"></span>
-            </h2>
-            <div class="js-reveal js-reveal-delay space-y-6 text-center">
-              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+</h2>
+<div class="js-reveal js-reveal-delay space-y-6 text-center">
+<p class="text-gray-700 text-base md:text-lg leading-relaxed">
                 Hip cantina serving authentic Mexican classics in a sleek, contemporary space with a buzzy, stylish bar. Contemporary menu inspired by fresh, authentic flavors in Hartsdale, NY.
               </p>
-              <p class="text-gray-800 text-lg md:text-xl font-medium italic pt-4">Eat. Drink. Fiesta.</p>
-            </div>
-          </div>
-        </section>
-
-        <section data-hours-banner class="bg-secondary py-6 transition-opacity duration-700 opacity-0">
-          <div class="container mx-auto px-4 text-center">
-            <p class="text-white text-base md:text-lg font-medium mb-1">Sun, Mon, Tue, Thu: 11am - 9pm</p>
-            <p class="text-white text-base md:text-lg font-medium mb-1">Wednesday: 11am - 7pm (Closing early)</p>
-            <p class="text-white text-base md:text-lg font-medium">Friday - Saturday: 11am - 10pm</p>
-          </div>
-        </section>
-
-        <section id="menu" data-menu-root class="relative bg-white py-14 md:py-20">
-          <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-6 md:mb-8">
-              <h2 class="text-5xl tracking-[0.30em] uppercase text-primary mb-4 font-semibold">Explore our menus test</h2>
-              <p class="max-w-2xl mx-auto text-sm md:text-base text-gray-600">
+<p class="text-gray-800 text-lg md:text-xl font-medium italic pt-4">Eat. Drink. Fiesta.</p>
+</div>
+</div>
+</section>
+<section class="bg-secondary py-6 transition-opacity duration-700 opacity-0" data-hours-banner="">
+<div class="container mx-auto px-4 text-center">
+<p class="text-white text-base md:text-lg font-medium mb-1">Sun, Mon, Tue, Thu: 11am - 9pm</p>
+<p class="text-white text-base md:text-lg font-medium mb-1">Wednesday: 11am - 7pm (Closing early)</p>
+<p class="text-white text-base md:text-lg font-medium">Friday - Saturday: 11am - 10pm</p>
+</div>
+</section>
+<section class="relative bg-white py-14 md:py-20" data-menu-root="" id="menu">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-6 md:mb-8">
+<h2 class="text-5xl tracking-[0.30em] uppercase text-primary mb-4 font-semibold">Explore our menus test</h2>
+<p class="max-w-2xl mx-auto text-sm md:text-base text-gray-600">
                 Browse weekly drink specials, happy hour bites and drinks, our full dinner offerings,
-                and decadent desserts & coffee – all inspired by vibrant Mexican flavors.
+                and decadent desserts &amp; coffee – all inspired by vibrant Mexican flavors.
               </p>
-            </div>
-            <div class="mt-4 md:mt-6">
-              <div class="px-4 md:px-8 py-3 overflow-x-auto">
-                <div class="flex justify-center items-center gap-3 md:gap-4 mx-auto w-max">
-                  <button type="button" data-menu-tab="menu-weekly" class="whitespace-nowrap px-4 md:px-5 py-2 rounded-full border text-xs md:text-sm tracking-[0.16em] uppercase transition-colors duration-300 bg-primary text-white border-primary shadow-sm">Weekly Specials</button>
-                  <button type="button" data-menu-tab="menu-happy-hour" class="whitespace-nowrap px-4 md:px-5 py-2 rounded-full border text-xs md:text-sm tracking-[0.16em] uppercase transition-colors duration-300 border-purple-200 bg-white/80 text-gray-800 hover:bg-primary hover:text-white hover:border-primary">Happy Hour</button>
-                  <button type="button" data-menu-tab="menu-dinner" class="whitespace-nowrap px-4 md:px-5 py-2 rounded-full border text-xs md:text-sm tracking-[0.16em] uppercase transition-colors duration-300 border-purple-200 bg-white/80 text-gray-800 hover:bg-primary hover:text-white hover:border-primary">Dinner Menu</button>
-                  <button type="button" data-menu-tab="menu-dessert" class="whitespace-nowrap px-4 md:px-5 py-2 rounded-full border text-xs md:text-sm tracking-[0.16em] uppercase transition-colors duration-300 border-purple-200 bg-white/80 text-gray-800 hover:bg-primary hover:text-white hover:border-primary">Dessert & Drinks</button>
-                </div>
-              </div>
-            </div>
-          </div>
-<div data-menu-panel="menu-weekly" class="menu-panel is-active">
-        <div class="py-2">
-          <section class="py-10 md:py-14">
-      <div class="max-w-5xl mx-auto px-4">
-        <div class="text-center mb-6">
-          <h3 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-1">WEEKLY SPECIALS</h3>
-          <p class="text-sm md:text-base tracking-[0.25em] text-gray-700 uppercase">All week long</p>
-        </div>
-        <div class="space-y-3">
-          <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">MONDAY · Bottle Beer</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">5</p>
-            </div>
+</div>
+<div class="mt-4 md:mt-6">
+<div class="px-4 md:px-8 py-3 overflow-x-auto">
+<div class="flex justify-center items-center gap-3 md:gap-4 mx-auto w-max">
+<button class="whitespace-nowrap px-4 md:px-5 py-2 rounded-full border text-xs md:text-sm tracking-[0.16em] uppercase transition-colors duration-300 bg-primary text-white border-primary shadow-sm" data-menu-tab="menu-weekly" type="button">Weekly Specials</button>
+<button class="whitespace-nowrap px-4 md:px-5 py-2 rounded-full border text-xs md:text-sm tracking-[0.16em] uppercase transition-colors duration-300 border-purple-200 bg-white/80 text-gray-800 hover:bg-primary hover:text-white hover:border-primary" data-menu-tab="menu-happy-hour" type="button">Happy Hour</button>
+<button class="whitespace-nowrap px-4 md:px-5 py-2 rounded-full border text-xs md:text-sm tracking-[0.16em] uppercase transition-colors duration-300 border-purple-200 bg-white/80 text-gray-800 hover:bg-primary hover:text-white hover:border-primary" data-menu-tab="menu-dinner" type="button">Dinner Menu</button>
+<button class="whitespace-nowrap px-4 md:px-5 py-2 rounded-full border text-xs md:text-sm tracking-[0.16em] uppercase transition-colors duration-300 border-purple-200 bg-white/80 text-gray-800 hover:bg-primary hover:text-white hover:border-primary" data-menu-tab="menu-dessert" type="button">Dessert &amp; Drinks</button>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-panel is-active" data-menu-panel="menu-weekly">
+<div class="py-2">
+<section class="py-10 md:py-14">
+<div class="max-w-5xl mx-auto px-4">
+<div class="text-center mb-6">
+<h3 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-1">WEEKLY SPECIALS</h3>
+<p class="text-sm md:text-base tracking-[0.25em] text-gray-700 uppercase">All week long</p>
+</div>
+<div class="space-y-3">
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">MONDAY · Draft Beer</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">7</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">MONDAY · Bottle Beer</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">5</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">TUESDAY · House Margarita</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">MONDAY · Draft Beer</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">7</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">WEDNESDAY · House Tequila 1 oz shot</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">3</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">TUESDAY · House Margarita</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">THURSDAY · Sangria</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">WEDNESDAY · House Tequila 1 oz shot</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">3</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">SUNDAY · 1/2 Off Bottle Wine</p>
-                
-              </div>
-              
-            </div>
-        </div>
-      </div>
-    </section>
-        </div>
-</div><div data-menu-panel="menu-happy-hour" class="menu-panel">
-        <div class="bg-white py-10 md:py-14">
-          <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-6">
-              <h3 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-1">Happy Hour</h3>
-              <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-gray-700">Monday – Friday 4PM–7PM</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div>
-                <h4 class="text-lg tracking-[0.25em] text-vega-purple uppercase mb-3">Bites</h4>
-                <div class="space-y-3 max-w-5xl mx-auto">
-                  <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Wings</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">THURSDAY · Sangria</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Beef Nacho</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">SUNDAY · 1/2 Off Bottle Wine</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div><div class="menu-panel" data-menu-panel="menu-happy-hour">
+<div class="bg-white py-10 md:py-14">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-6">
+<h3 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-1">Happy Hour</h3>
+<p class="text-xs md:text-sm tracking-[0.25em] uppercase text-gray-700">Monday – Friday 4PM–7PM</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div>
+<h4 class="text-lg tracking-[0.25em] text-vega-purple uppercase mb-3">Bites</h4>
+<div class="space-y-3 max-w-5xl mx-auto">
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Avocado Fritters</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Wings</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Ceviche Tostada</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Beef Nacho</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Empanada Chicken or Beef</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">5</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Avocado Fritters</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Guacamole, Salsa & Arbol</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
-            </div>
-                </div>
-              </div>
-              <div>
-                <h4 class="text-lg tracking-[0.25em] text-vega-purple uppercase mb-3">Drinks</h4>
-                <div class="space-y-3 max-w-5xl mx-auto">
-                  <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Draft Beer</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">7</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Ceviche Tostada</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Bottle Beer</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">5</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Empanada Chicken or Beef</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">5</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">House Wine</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Guacamole, Salsa &amp; Arbol</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
+</div>
+</div>
+</div>
+<div>
+<h4 class="text-lg tracking-[0.25em] text-vega-purple uppercase mb-3">Drinks</h4>
+<div class="space-y-3 max-w-5xl mx-auto">
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">House Margarita</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">+ Flavour 2 + Floater 5</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Draft Beer</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">7</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Sangria</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
-            </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-</div><div data-menu-panel="menu-dinner" class="menu-panel">
-        <div class="py-10 md:py-14">
-          <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-8">
-              <h3 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase">Dinner</h3>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-              <div>
-                <h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mb-3">Small Plates</h4>
-                <div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Wings of Fire</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Sweet chipotle chili/orange habanero</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">14</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Bottle Beer</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">5</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Loaded Nachos</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn tortilla, cheese, beans, salsa, jalapeño, crema, guacamole</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">House Wine</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Avocado Fritters</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn, cheese, chili lime mayo</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">House Margarita</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">+ Flavour 2 + Floater 5</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Chicken Flautas</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn tortilla, crema, queso fresco, tomatillo</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Sangria</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="menu-panel" data-menu-panel="menu-dinner">
+<div class="py-10 md:py-14">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-8">
+<h3 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase">Dinner</h3>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<div>
+<h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mb-3">Small Plates</h4>
+<div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Wings of Fire</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Sweet chipotle chili/orange habanero</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">14</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Mexican Street Corn</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Grilled corn, cotija cheese, mayo, queso fresco</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Loaded Nachos</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn tortilla, cheese, beans, salsa, jalapeño, crema, guacamole</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Guacamole</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Fresh avocado, lime, cilantro, tomato, jalapeño</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">16</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Avocado Fritters</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn, cheese, chili lime mayo</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Shrimp Ceviche</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Lime, cilantro, pepper, corn, celery</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">16</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Chicken Flautas</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn tortilla, crema, queso fresco, tomatillo</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Tostones</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Hand mashed plantain</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Mexican Street Corn</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Grilled corn, cotija cheese, mayo, queso fresco</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">9</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Empanada</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Fried flour tortilla, Mexican spices, chicken or ground beef</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Guacamole</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Fresh avocado, lime, cilantro, tomato, jalapeño</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">16</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Coco Loco Shrimp</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Coconut, mango, habanero salsa</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">15</p>
-            </div></div>
-                <h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mt-6 mb-3">Soup & Salad</h4>
-                <div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Chicken Tortilla Soup</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn tortilla chips, avocado, queso fresco</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Shrimp Ceviche</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Lime, cilantro, pepper, corn, celery</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">16</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Beef Soup</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Slow cooked brisket, Mexican spices, corn, potato</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Tostones</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Hand mashed plantain</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Black Bean Soup</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Onion, cilantro, garlic, cumin</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Empanada</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Fried flour tortilla, Mexican spices, chicken or ground beef</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Avocado Salad</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Greens, jicama, tomato, cilantro dressing</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Coco Loco Shrimp</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Coconut, mango, habanero salsa</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">15</p>
+</div></div>
+<h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mt-6 mb-3">Soup &amp; Salad</h4>
+<div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Chicken Tortilla Soup</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn tortilla chips, avocado, queso fresco</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Taco Shell Salad</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Flour shell, greens, tomato, beans, cheese, crema, guacamole</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div></div>
-              </div>
-              <div>
-                <h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mb-3">Classics</h4>
-                <div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Tacos</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Soft corn tortilla (3), salsa, rice, beans</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">16–24</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Beef Soup</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Slow cooked brisket, Mexican spices, corn, potato</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Fajita</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Onion, peppers, flour tortilla, crema, rice, beans</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">20–30</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Black Bean Soup</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Onion, cilantro, garlic, cumin</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">8</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Burrito</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Flour tortilla, rice, beans, cheese, salsa</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">15–22</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Avocado Salad</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Greens, jicama, tomato, cilantro dressing</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Enchilada</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn tortilla, salsa, crema, cheese, rice, beans</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">19–27</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Taco Shell Salad</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Flour shell, greens, tomato, beans, cheese, crema, guacamole</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div></div>
+</div>
+<div>
+<h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mb-3">Classics</h4>
+<div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Tacos</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Soft corn tortilla (3), salsa, rice, beans</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">16–24</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Quesadilla</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Flour tortilla, cheese, crema, tomato, rice, beans</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">16–24</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Fajita</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Onion, peppers, flour tortilla, crema, rice, beans</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">20–30</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Chimichanga</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Fried flour tortilla, cheese, rice, beans</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">18–27</p>
-            </div></div>
-              </div>
-              <div>
-                <h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mb-3">Signature</h4>
-                <div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Chipotle Chicken</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Lemon garlic, chipotle, rice, market vegetables</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">23</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Burrito</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Flour tortilla, rice, beans, cheese, salsa</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">15–22</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Churrasco</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Skirt steak, chimichurri, fried plantain, beans, market vegetables</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">35</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Enchilada</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn tortilla, salsa, crema, cheese, rice, beans</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">19–27</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Carnitas</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Slow cooked braised ribs, dark beer, rice, beans, salsa</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">22</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Quesadilla</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Flour tortilla, cheese, crema, tomato, rice, beans</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">16–24</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Salmon Yucatan</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Pan seared, creamy avocado salsa, market vegetables</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">27</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Chimichanga</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Fried flour tortilla, cheese, rice, beans</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">18–27</p>
+</div></div>
+</div>
+<div>
+<h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mb-3">Signature</h4>
+<div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Chipotle Chicken</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Lemon garlic, chipotle, rice, market vegetables</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">23</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Shrimp Diablo</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Shrimp, chipotle butter, rice, market vegetables</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">27</p>
-            </div></div>
-                <h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mt-6 mb-3">Sides & Kids</h4>
-                <div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Guacamole</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Churrasco</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Skirt steak, chimichurri, fried plantain, beans, market vegetables</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">35</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Homemade Chips & Salsa</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Carnitas</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Slow cooked braised ribs, dark beer, rice, beans, salsa</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">22</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Fried Plantain</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Salmon Yucatan</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Pan seared, creamy avocado salsa, market vegetables</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">27</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Rice (Red / White)</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4 / 6</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Shrimp Diablo</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Shrimp, chipotle butter, rice, market vegetables</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">27</p>
+</div></div>
+<h4 class="text-lg tracking-[0.25em] text-gray-900 uppercase mt-6 mb-3">Sides &amp; Kids</h4>
+<div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Guacamole</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Beans</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4 / 6</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Homemade Chips &amp; Salsa</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Kids · Chicken Fingers</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">10 and under, served with fries</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Fried Plantain</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Kids · Cheese Quesadilla</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Rice (Red / White)</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4 / 6</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Kids · Ground Beef Cheese Taco</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-</div><div data-menu-panel="menu-dessert" class="menu-panel">
-        <div class="bg-white py-10 md:py-14">
-          <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-6">
-              <h3 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-2">Dessert</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div>
-                <h4 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-4 text-center">Dessert</h4>
-                <div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Churros</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Fried pastry, cinnamon, chocolate, ice crème</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Beans</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4 / 6</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Mexican Choco Tres Leche</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Traditional Mexican sponge cake</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Kids · Chicken Fingers</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">10 and under, served with fries</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Fried Ice Crème</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn crumbs, popcorn, caramel, cinnamon</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Kids · Cheese Quesadilla</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Flan</p>
-                <p class="text-xs md:text-sm text-gray-700 mt-0.5">Mexican custard</p>
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">7</p>
-            </div></div>
-              </div>
-              <div class="space-y-6">
-                <div>
-                  <h4 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-4 text-center">Cordials</h4>
-                  <div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Kahlua</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Kids · Ground Beef Cheese Taco</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="menu-panel" data-menu-panel="menu-dessert">
+<div class="bg-white py-10 md:py-14">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-6">
+<h3 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-2">Dessert</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div>
+<h4 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-4 text-center">Dessert</h4>
+<div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Churros</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Fried pastry, cinnamon, chocolate, ice crème</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Grand Marnier</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Mexican Choco Tres Leche</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Traditional Mexican sponge cake</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Baileys</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Fried Ice Crème</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Corn crumbs, popcorn, caramel, cinnamon</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Sambuca</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
-            </div></div>
-                </div>
-                <div>
-                  <h4 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-4 text-center">Hot Drinks</h4>
-                  <div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Coffee</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Flan</p>
+<p class="text-xs md:text-sm text-gray-700 mt-0.5">Mexican custard</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">7</p>
+</div></div>
+</div>
+<div class="space-y-6">
+<div>
+<h4 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-4 text-center">Cordials</h4>
+<div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Kahlua</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Espresso</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Grand Marnier</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Cappuccino</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Baileys</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Tea</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Sambuca</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">10</p>
+</div></div>
+</div>
+<div>
+<h4 class="text-xl md:text-2xl tracking-[0.3em] text-vega-purple uppercase mb-4 text-center">Hot Drinks</h4>
+<div class="space-y-3"><div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Coffee</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Double Espresso</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
-            </div>
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Espresso</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4</p>
+</div>
 <div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
-              <div>
-                <p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Mexican Coffee + Liquor</p>
-                
-              </div>
-              <p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
-            </div></div>
-                </div>
-              </div>
-            </div>
-            <p class="mt-8 text-center text-xs md:text-sm tracking-[0.3em] uppercase text-orange-500">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Cappuccino</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
+</div>
+<div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Tea</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">4</p>
+</div>
+<div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Double Espresso</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">6</p>
+</div>
+<div class="flex justify-between gap-4 border-b border-dotted border-purple-300 pb-1">
+<div>
+<p class="font-semibold tracking-wide text-gray-900 uppercase text-sm md:text-base">Mexican Coffee + Liquor</p>
+</div>
+<p class="font-semibold text-vega-purple text-sm md:text-base whitespace-nowrap">12</p>
+</div></div>
+</div>
+</div>
+</div>
+<p class="mt-8 text-center text-xs md:text-sm tracking-[0.3em] uppercase text-orange-500">
               Stressed is just dessert spelled backwards
             </p>
-          </div>
-        </div>
 </div>
-        </section>
-
-        <section id="press" data-press-root class="relative py-20 md:py-28 overflow-hidden">
-          <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465368_mhpple.jpeg')">
-            <div class="absolute inset-0 bg-black/50"></div>
-          </div>
-          <div class="relative z-10 container mx-auto px-4">
-            <h2 class="js-reveal text-4xl md:text-5xl font-serif text-white text-center mb-12 relative pb-4">
-              Press & Awards
+</div>
+</div>
+</section>
+<section class="relative py-20 md:py-28 overflow-hidden" data-press-root="" id="press">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465368_mhpple.jpeg')">
+<div class="absolute inset-0 bg-black/50"></div>
+</div>
+<div class="relative z-10 container mx-auto px-4">
+<h2 class="js-reveal text-4xl md:text-5xl font-serif text-white text-center mb-12 relative pb-4">
+              Press &amp; Awards
               <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-secondary"></span>
-            </h2>
-            <div class="js-reveal js-reveal-delay relative max-w-3xl mx-auto">
-              <button type="button" data-press-prev class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 z-20 w-12 h-12 flex items-center justify-center text-white/70 hover:text-white transition-colors duration-300" aria-label="Previous award">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
-              </button>
-              <button type="button" data-press-next class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-16 z-20 w-12 h-12 flex items-center justify-center text-white/70 hover:text-white transition-colors duration-300" aria-label="Next award">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
-              </button>
-              <div class="overflow-hidden px-4">
-                <div data-press-track class="press-track">
-              <div class="w-full flex-shrink-0 flex justify-center">
-                <a href="https://www.nytimes.com/2012/08/12/nyregion/a-review-of-vega-in-hartsdale.html" target="_blank" rel="noopener noreferrer" class="block transform transition-transform duration-300 hover:scale-105">
-                  <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465407_bli6cl.jpeg" alt="The New York Times Review - Real Mexican Cuisine, Right Down to Dessert" class="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-contain drop-shadow-2xl" loading="lazy" />
-                </a>
-              </div>
-              <div class="w-full flex-shrink-0 flex justify-center">
-                <a href="http://food.lohudblogs.com/2010/07/23/vega-the-new-mexican-in-hartsdale/" target="_blank" rel="noopener noreferrer" class="block transform transition-transform duration-300 hover:scale-105">
-                  <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465399_8kbuw6.jpeg" alt="Lohud Top 5 Stylish Restaurant" class="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-contain drop-shadow-2xl" loading="lazy" />
-                </a>
-              </div>
-              <div class="w-full flex-shrink-0 flex justify-center">
-                <a href="http://www.westchestermagazine.com/Blogs/Eat-Drink-Post/March-2017/Vega-Mexican-Hartsdale/" target="_blank" rel="noopener noreferrer" class="block transform transition-transform duration-300 hover:scale-105">
-                  <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465389_zgs24g.jpeg" alt="Best of Westchester" class="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-contain drop-shadow-2xl" loading="lazy" />
-                </a>
-              </div>
-              <div class="w-full flex-shrink-0 flex justify-center">
-                <a href="http://www.fios1news.com/lowerhudsonvalley/restaurant-hunter-vega-hartsdale#.Wl_Vz2bMzv0" target="_blank" rel="noopener noreferrer" class="block transform transition-transform duration-300 hover:scale-105">
-                  <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465418_cjbnir.jpeg" alt="Restaurant Hunter Signature Dish" class="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-contain drop-shadow-2xl" loading="lazy" />
-                </a>
-              </div>
-                </div>
-              </div>
-              <div class="flex justify-center gap-3 mt-8">
-            <button type="button" data-press-dot data-press-index="0" class="w-3 h-3 rounded-full transition-all duration-300 bg-white scale-125" aria-label="Go to award 1"></button>
-            <button type="button" data-press-dot data-press-index="1" class="w-3 h-3 rounded-full transition-all duration-300 bg-white/40 hover:bg-white/60" aria-label="Go to award 2"></button>
-            <button type="button" data-press-dot data-press-index="2" class="w-3 h-3 rounded-full transition-all duration-300 bg-white/40 hover:bg-white/60" aria-label="Go to award 3"></button>
-            <button type="button" data-press-dot data-press-index="3" class="w-3 h-3 rounded-full transition-all duration-300 bg-white/40 hover:bg-white/60" aria-label="Go to award 4"></button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="gallery" class="bg-vega-bg-light py-16 md:py-20">
-          <div class="container mx-auto px-4">
-            <h2 class="js-reveal text-4xl md:text-5xl font-serif text-primary text-center mb-12 relative pb-4">
+</h2>
+<div class="js-reveal js-reveal-delay relative max-w-3xl mx-auto">
+<button aria-label="Previous award" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 z-20 w-12 h-12 flex items-center justify-center text-white/70 hover:text-white transition-colors duration-300" data-press-prev="" type="button">
+<svg fill="none" height="48" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m15 18-6-6 6-6"></path></svg>
+</button>
+<button aria-label="Next award" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-16 z-20 w-12 h-12 flex items-center justify-center text-white/70 hover:text-white transition-colors duration-300" data-press-next="" type="button">
+<svg fill="none" height="48" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
+</button>
+<div class="overflow-hidden px-4">
+<div class="press-track" data-press-track="">
+<div class="w-full flex-shrink-0 flex justify-center">
+<a class="block transform transition-transform duration-300 hover:scale-105" href="https://www.nytimes.com/2012/08/12/nyregion/a-review-of-vega-in-hartsdale.html" rel="noopener noreferrer" target="_blank">
+<img alt="The New York Times Review - Real Mexican Cuisine, Right Down to Dessert" class="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-contain drop-shadow-2xl" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465407_bli6cl.jpeg">
+</img></a>
+</div>
+<div class="w-full flex-shrink-0 flex justify-center">
+<a class="block transform transition-transform duration-300 hover:scale-105" href="http://food.lohudblogs.com/2010/07/23/vega-the-new-mexican-in-hartsdale/" rel="noopener noreferrer" target="_blank">
+<img alt="Lohud Top 5 Stylish Restaurant" class="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-contain drop-shadow-2xl" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465399_8kbuw6.jpeg">
+</img></a>
+</div>
+<div class="w-full flex-shrink-0 flex justify-center">
+<a class="block transform transition-transform duration-300 hover:scale-105" href="http://www.westchestermagazine.com/Blogs/Eat-Drink-Post/March-2017/Vega-Mexican-Hartsdale/" rel="noopener noreferrer" target="_blank">
+<img alt="Best of Westchester" class="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-contain drop-shadow-2xl" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465389_zgs24g.jpeg">
+</img></a>
+</div>
+<div class="w-full flex-shrink-0 flex justify-center">
+<a class="block transform transition-transform duration-300 hover:scale-105" href="http://www.fios1news.com/lowerhudsonvalley/restaurant-hunter-vega-hartsdale#.Wl_Vz2bMzv0" rel="noopener noreferrer" target="_blank">
+<img alt="Restaurant Hunter Signature Dish" class="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-contain drop-shadow-2xl" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465418_cjbnir.jpeg"/>
+</a>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-3 mt-8">
+<button aria-label="Go to award 1" class="w-3 h-3 rounded-full transition-all duration-300 bg-white scale-125" data-press-dot="" data-press-index="0" type="button"></button>
+<button aria-label="Go to award 2" class="w-3 h-3 rounded-full transition-all duration-300 bg-white/40 hover:bg-white/60" data-press-dot="" data-press-index="1" type="button"></button>
+<button aria-label="Go to award 3" class="w-3 h-3 rounded-full transition-all duration-300 bg-white/40 hover:bg-white/60" data-press-dot="" data-press-index="2" type="button"></button>
+<button aria-label="Go to award 4" class="w-3 h-3 rounded-full transition-all duration-300 bg-white/40 hover:bg-white/60" data-press-dot="" data-press-index="3" type="button"></button>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-vega-bg-light py-16 md:py-20" id="gallery">
+<div class="container mx-auto px-4">
+<h2 class="js-reveal text-4xl md:text-5xl font-serif text-primary text-center mb-12 relative pb-4">
               Gallery
               <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-secondary"></span>
-            </h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 0ms">
-              <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465443_j90zs5.jpeg" alt="VEGA Restaurant Interior" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
-            </div>
-            <div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 100ms">
-              <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465477_ffdoaa.jpeg" alt="VEGA Dining Area" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
-            </div>
-            <div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 200ms">
-              <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465486_ydzdh6.jpeg" alt="VEGA Restaurant Space" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
-            </div>
-            <div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 300ms">
-              <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465495_yn323g.jpeg" alt="VEGA Private Dining" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
-            </div>
-            <div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 400ms">
-              <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465515_uk2fzf.jpeg" alt="VEGA Appetizers" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
-            </div>
-            <div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 500ms">
-              <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465532_yaives.jpeg" alt="VEGA Main Course" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
-            </div>
-            <div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 600ms">
-              <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465551_h723pc.jpeg" alt="VEGA Steak Dish" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
-            </div>
-            <div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 700ms">
-              <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465560_c3sv9u.jpeg" alt="VEGA Cocktails" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
-            </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="bg-secondary py-12 md:py-16">
-          <div class="container mx-auto px-4">
-            <h2 class="js-reveal text-3xl md:text-4xl font-bold text-white text-center mb-10">ORDER NOW</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-              <a href="https://order.toasttab.com/online/vegamexicancuisine" target="_blank" rel="noopener noreferrer" class="js-reveal rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-105" style="transition-delay: 0ms">
-                <img src="https://www.vegamexican.com/images/order-online/menufy.jpg" alt="Order online with Menufy" class="h-24 md:h-32 w-full max-w-xs md:max-w-sm object-contain" loading="lazy" />
-              </a>
-              <a href="https://www.ubereats.com/en-US/nyc-suburbs/food-delivery/vega-mexican-cuisine/QriofYpPQe-azvJYF1qjqw/" target="_blank" rel="noopener noreferrer" class="js-reveal rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-105" style="transition-delay: 100ms">
-                <img src="https://www.vegamexican.com/images/order-online/ubereats.jpg" alt="Order on Uber Eats" class="h-24 md:h-32 w-full max-w-xs md:max-w-sm object-contain" loading="lazy" />
-              </a>
-              <a href="http://menus.fyi/805136" target="_blank" rel="noopener noreferrer" class="js-reveal rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-105" style="transition-delay: 200ms">
-                <img src="https://www.vegamexican.com/images/order-online/grubhub.jpg" alt="Order on Grubhub" class="h-24 md:h-32 w-full max-w-xs md:max-w-sm object-contain" loading="lazy" />
-              </a>
-              <a href="https://www.doordash.com/store/vega-mexican-cuisine-hartsdale-118573/en-US" target="_blank" rel="noopener noreferrer" class="js-reveal rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-105" style="transition-delay: 300ms">
-                <img src="https://www.vegamexican.com/images/order-online/doordash.jpg" alt="Order on DoorDash" class="h-24 md:h-32 w-full max-w-xs md:max-w-sm object-contain" loading="lazy" />
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section id="newsletter" class="bg-vega-bg-dark py-16 md:py-20">
-          <div class="container mx-auto px-4 max-w-3xl text-center">
-            <h2 class="text-3xl md:text-4xl font-serif text-white mb-4">Join Our Newsletter</h2>
-            <p class="text-white/80 mb-8 max-w-xl mx-auto">Stay updated with our latest news, special offers, and exclusive events.</p>
-            <form data-newsletter-form class="space-y-6">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input name="email" type="email" placeholder="Your Email Address" class="flex h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-white/50 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary" />
-                <input name="phone" type="tel" placeholder="Your Phone Number (for SMS)" class="flex h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-white/50 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary" />
-              </div>
-              <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-white">
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input name="email_opt_in" type="checkbox" checked class="h-4 w-4 rounded border-white/50 text-secondary focus:ring-secondary" />
-                  <span>Email Updates</span>
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input name="sms_opt_in" type="checkbox" class="h-4 w-4 rounded border-white/50 text-secondary focus:ring-secondary" />
-                  <span>SMS Alerts</span>
-                </label>
-              </div>
-              <div>
-                <button type="submit" class="inline-flex items-center justify-center rounded-md bg-secondary px-8 py-3 text-base font-medium text-white shadow transition hover:bg-secondary-dark hover:scale-[1.02] disabled:opacity-50 w-full sm:w-auto">Subscribe</button>
-              </div>
-              <p data-newsletter-message class="mt-4 text-sm min-h-[1.25rem]"></p>
-            </form>
-          </div>
-        </section>
-      </main>
-
-      <footer id="contact" class="bg-vega-bg-light">
-        <div class="container mx-auto px-4 py-12 md:py-16">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-5xl mx-auto">
-            <div class="text-center md:text-left">
-              <h3 class="text-xl md:text-2xl font-serif text-primary mb-4 relative pb-2 inline-block">
+</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+<div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 0ms">
+<img alt="VEGA Restaurant Interior" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465443_j90zs5.jpeg"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+</div>
+<div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 100ms">
+<img alt="VEGA Dining Area" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465477_ffdoaa.jpeg"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+</div>
+<div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 200ms">
+<img alt="VEGA Restaurant Space" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465486_ydzdh6.jpeg"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+</div>
+<div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 300ms">
+<img alt="VEGA Private Dining" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465495_yn323g.jpeg"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+</div>
+<div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 400ms">
+<img alt="VEGA Appetizers" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465515_uk2fzf.jpeg"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+</div>
+<div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 500ms">
+<img alt="VEGA Main Course" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465532_yaives.jpeg"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+</div>
+<div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 600ms">
+<img alt="VEGA Steak Dish" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465551_h723pc.jpeg"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+</div>
+<div class="gallery-item group relative overflow-hidden aspect-[4/3] cursor-pointer" style="transition-delay: 700ms">
+<img alt="VEGA Cocktails" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9dfad46d-d519-43a5-95e8-beb6c7251a3b/de8c94d8-887e-4625-825f-ec262dbc28df/1775465560_c3sv9u.jpeg"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-secondary py-12 md:py-16">
+<div class="container mx-auto px-4">
+<h2 class="js-reveal text-3xl md:text-4xl font-bold text-white text-center mb-10">ORDER NOW</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+<a class="js-reveal rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-105" href="https://order.toasttab.com/online/vegamexicancuisine" rel="noopener noreferrer" style="transition-delay: 0ms" target="_blank">
+<img alt="Order online with Menufy" class="h-24 md:h-32 w-full max-w-xs md:max-w-sm object-contain" loading="lazy" src="https://www.vegamexican.com/images/order-online/menufy.jpg"/>
+</a>
+<a class="js-reveal rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-105" href="https://www.ubereats.com/en-US/nyc-suburbs/food-delivery/vega-mexican-cuisine/QriofYpPQe-azvJYF1qjqw/" rel="noopener noreferrer" style="transition-delay: 100ms" target="_blank">
+<img alt="Order on Uber Eats" class="h-24 md:h-32 w-full max-w-xs md:max-w-sm object-contain" loading="lazy" src="https://www.vegamexican.com/images/order-online/ubereats.jpg"/>
+</a>
+<a class="js-reveal rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-105" href="http://menus.fyi/805136" rel="noopener noreferrer" style="transition-delay: 200ms" target="_blank">
+<img alt="Order on Grubhub" class="h-24 md:h-32 w-full max-w-xs md:max-w-sm object-contain" loading="lazy" src="https://www.vegamexican.com/images/order-online/grubhub.jpg"/>
+</a>
+<a class="js-reveal rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-105" href="https://www.doordash.com/store/vega-mexican-cuisine-hartsdale-118573/en-US" rel="noopener noreferrer" style="transition-delay: 300ms" target="_blank">
+<img alt="Order on DoorDash" class="h-24 md:h-32 w-full max-w-xs md:max-w-sm object-contain" loading="lazy" src="https://www.vegamexican.com/images/order-online/doordash.jpg"/>
+</a>
+</div>
+</div>
+</section>
+<section class="bg-vega-bg-dark py-16 md:py-20" id="newsletter">
+<div class="container mx-auto px-4 max-w-3xl text-center">
+<h2 class="text-3xl md:text-4xl font-serif text-white mb-4">Join Our Newsletter</h2>
+<p class="text-white/80 mb-8 max-w-xl mx-auto">Stay updated with our latest news, special offers, and exclusive events.</p>
+<form class="space-y-6" data-newsletter-form="">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<input class="flex h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-white/50 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary" name="email" placeholder="Your Email Address" type="email"/>
+<input class="flex h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-white/50 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary" name="phone" placeholder="Your Phone Number (for SMS)" type="tel"/>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-white">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="h-4 w-4 rounded border-white/50 text-secondary focus:ring-secondary" name="email_opt_in" type="checkbox"/>
+<span>Email Updates</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="h-4 w-4 rounded border-white/50 text-secondary focus:ring-secondary" name="sms_opt_in" type="checkbox"/>
+<span>SMS Alerts</span>
+</label>
+</div>
+<div>
+<button class="inline-flex items-center justify-center rounded-md bg-secondary px-8 py-3 text-base font-medium text-white shadow transition hover:bg-secondary-dark hover:scale-[1.02] disabled:opacity-50 w-full sm:w-auto" type="submit">Subscribe</button>
+</div>
+<p class="mt-4 text-sm min-h-[1.25rem]" data-newsletter-message=""></p>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-vega-bg-light" id="contact">
+<div class="container mx-auto px-4 py-12 md:py-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-5xl mx-auto">
+<div class="text-center md:text-left">
+<h3 class="text-xl md:text-2xl font-serif text-primary mb-4 relative pb-2 inline-block">
                 ADDRESS
                 <span class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary"></span>
-              </h3>
-              <div class="space-y-1 text-gray-700">
-                <p class="flex items-center justify-center md:justify-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+</h3>
+<div class="space-y-1 text-gray-700">
+<p class="flex items-center justify-center md:justify-start gap-2">
+<svg class="text-primary shrink-0" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                   189 E Hartsdale Ave
                 </p>
-                <p class="pl-6">Hartsdale, NY 10530</p>
-              </div>
-              <div class="flex items-center justify-center md:justify-start gap-3 mt-4">
-                <a href="https://www.facebook.com/vegamexican" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:bg-primary hover:border-primary hover:text-white transition-all duration-300" aria-label="Facebook">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                </a>
-                <a href="https://www.instagram.com/vegamexican/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:bg-primary hover:border-primary hover:text-white transition-all duration-300" aria-label="Instagram">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                </a>
-                <a href="https://www.google.com/maps/place/VEGA+Mexican+Cuisine/@41.012408,-73.7958676,15z/data=!4m5!3m4!1s0x0:0xea814ff113fb7ada!8m2!3d41.012408!4d-73.7958676" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:bg-primary hover:border-primary hover:text-white transition-all duration-300" aria-label="Google Maps">
-                  <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                </a>
-              </div>
-            </div>
-            <div class="text-center md:text-left">
-              <h3 class="text-xl md:text-2xl font-serif text-primary mb-4 relative pb-2 inline-block">
+<p class="pl-6">Hartsdale, NY 10530</p>
+</div>
+<div class="flex items-center justify-center md:justify-start gap-3 mt-4">
+<a aria-label="Facebook" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:bg-primary hover:border-primary hover:text-white transition-all duration-300" href="https://www.facebook.com/vegamexican" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+</a>
+<a aria-label="Instagram" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:bg-primary hover:border-primary hover:text-white transition-all duration-300" href="https://www.instagram.com/vegamexican/" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</a>
+<a aria-label="Google Maps" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:bg-primary hover:border-primary hover:text-white transition-all duration-300" href="https://www.google.com/maps/place/VEGA+Mexican+Cuisine/@41.012408,-73.7958676,15z/data=!4m5!3m4!1s0x0:0xea814ff113fb7ada!8m2!3d41.012408!4d-73.7958676" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+</a>
+</div>
+</div>
+<div class="text-center md:text-left">
+<h3 class="text-xl md:text-2xl font-serif text-primary mb-4 relative pb-2 inline-block">
                 CONTACT US
                 <span class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary"></span>
-              </h3>
-              <div class="space-y-3 text-gray-700">
-                <a href="tel:9147230010" class="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</h3>
+<div class="space-y-3 text-gray-700">
+<a class="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors duration-300" href="tel:9147230010">
+<svg class="text-primary shrink-0" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                   (914) 723-0010
                 </a>
-                <a href="mailto:info@vegamexican.com" class="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+<a class="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors duration-300" href="mailto:info@vegamexican.com">
+<svg class="text-primary shrink-0" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                   info@vegamexican.com
                 </a>
-              </div>
-            </div>
-            <div class="text-center md:text-left">
-              <h3 class="text-xl md:text-2xl font-serif text-primary mb-4 relative pb-2 inline-block">
+</div>
+</div>
+<div class="text-center md:text-left">
+<h3 class="text-xl md:text-2xl font-serif text-primary mb-4 relative pb-2 inline-block">
                 HOURS
                 <span class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary"></span>
-              </h3>
-              <div class="space-y-1 text-gray-700">
-                <p class="flex items-center justify-center md:justify-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+</h3>
+<div class="space-y-1 text-gray-700">
+<p class="flex items-center justify-center md:justify-start gap-2">
+<svg class="text-primary shrink-0" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                   Sun, Mon, Tue, Thu: 11am - 9pm
                 </p>
-                <p class="pl-6 font-semibold text-secondary">Wednesday: 11am - 7pm (Closing early)</p>
-                <p class="pl-6">Friday - Saturday: 11am - 10pm</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <button type="button" data-scroll-top class="fixed bottom-8 right-8 z-50 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-500 hover:bg-primary-dark hover:scale-110 opacity-0 translate-y-10 pointer-events-none" aria-label="Scroll to top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
-      </button>
-    </div>
-
-    <script src="js/main.js"></script>
-  </body>
+<p class="pl-6 font-semibold text-secondary">Wednesday: 11am - 7pm (Closing early)</p>
+<p class="pl-6">Friday - Saturday: 11am - 10pm</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Scroll to top" class="fixed bottom-8 right-8 z-50 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-500 hover:bg-primary-dark hover:scale-110 opacity-0 translate-y-10 pointer-events-none" data-scroll-top="" type="button">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m18 15-6-6-6 6"></path></svg>
+</button>
+</div>
+<script src="js/main.js"></script>
+</body>
 </html>
